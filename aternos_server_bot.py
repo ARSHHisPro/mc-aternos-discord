@@ -45,10 +45,6 @@ async def on_message(message):
           await message.channel.send("server is now alive!!! you can join in 2-3 minutes by pasting ||DevuncopySMP.aternos.me:60456|| in the server address.")
           return
 
-    if message.channel.name == 'minecraft-smp':
-        if user_message.lower() == '?server_stop':
-          myserv.stop()
-          await message.channel.send(f'server stopped')
-          return
+    
 
 client.run(TOKEN)
